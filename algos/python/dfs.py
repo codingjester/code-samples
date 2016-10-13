@@ -12,7 +12,7 @@ def dfs_iter(graph, start, path=[]):
     """
     q=[start]
     while q:
-        v = q.pop(0)
+        v = q.pop()
         if v not in path:
             path += [v]
             q += graph[v]
